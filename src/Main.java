@@ -4,7 +4,7 @@ public class Main {
         phone = phone.replace("-", "");
         phone = phone.replace(" ", "");
         phone = phone.replace("+", "");
-        if (phone.length() == 10 ) {
+        if (phone.length() == 10) {
             phone = '7' + phone;
         } else if (phone.length() > 11) {
             throw new RuntimeException("Телефон слишком длинный");
@@ -20,5 +20,18 @@ public class Main {
         } else {
             System.out.println("Неудача");
         }
+        System.out.println("Задача 1");
+        String name = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + name + " " + middleName;
+        System.out.println(fullName);
+        System.out.println("Задача 2");
+        String fullname1 = fullName;
+        System.out.println(fullname1.toUpperCase());
+        System.out.println("Задача 3");
+        String fullNameNew = "Иванов Семён Семёнович";
+        fullNameNew = fullNameNew.replace("ё", "е");
+        System.out.println(fullNameNew);
     }
 }
